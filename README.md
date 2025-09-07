@@ -69,7 +69,7 @@ Follow these steps to set up the project for development on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Honkdum/ghar-ka-khana.git
+    git clone https://github.com/Akshit5291/ghar-ka-khana.git
     cd ghar-ka-khana
     ```
 
