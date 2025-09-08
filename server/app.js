@@ -5,6 +5,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config(); // Load environment variables
+const authRoutes = require('./routes/auth');
 
 // Initialize Express application
 const app = express();
@@ -22,6 +23,7 @@ console.log('MONGO_URI exists:', !!process.env.MONGO_URI); // This will show 'tr
 app.use(cors());
 // Parse incoming JSON requests
 app.use(express.json());
+app.use('/api/auth', authRoutes);
 
 // --- Database Connection ---
 const MONGO_URI = process.env.MONGO_URI;
